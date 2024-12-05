@@ -1,0 +1,12 @@
+smbclient Cheat Sheet
+Terence Priestley - pur3sneak
+
+To launch use: smbclient
+To display public shares on the server use: -L server
+To connect to a share use: //server/share/
+Connect with a specific username use: //server/share/ --user username
+Connect with a specific workgroup use: //server/share --workgroup domain --user username
+Connect with a specific username and password: //server/share --user username%password
+Download a file from the server use: //server/share --directory path --command "get filename"
+Upload a file to the server use: //server/share --directory path --command "put filename"
+List the shares from a server anonymously use: --list=server --no-pass
